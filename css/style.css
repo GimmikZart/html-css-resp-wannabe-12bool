@@ -28,23 +28,12 @@
 
 
 
-
-
-
 /* BLOCCO COMEFUNZIONA---------------------------------------- */
 
 #comefunziona {
   background-color: rgb(222, 222, 217);
+  margin-bottom: 20px;
 }
-
-
-
-
-
-
-
-
-
 
 /* BLOCCO PERCHE ----------------------------------------------*/
 
@@ -60,34 +49,35 @@
 }
 
 
-
-
-/* MEDIA QUERY GENERICHE -------------------------------------- */
-
-/* STILE CONTENITORI---------- */
-
-
-
-
-
-
 /* MEDIA QUERY STYLE ---------------------*/
 
 /* device piccolo */
 @media screen and (max-width: 768px) {
      .container>div {
         margin-top: 20px;
-        padding: 10px 0;
+        padding: 10px 50px;
       }
 
-      h1 * {
+      .container h1{
         font-size: 50px;
+        font-family: sans-serif;
+        margin-top: 5%;
+        padding-top: 5%;
       }
 
+      .container img{
+        height: 150px;
+        width: auto;
+      }
 
+      .container h3 {
+        font-size: 30px;
+      }
+
+      .container p {
+        font-size: 20px;
+      }
 }
-
-
 
 /* device medio */
 @media screen and (min-width: 769px) and (max-width:992px){
@@ -96,76 +86,55 @@
         padding: 0 5%;
       }
 
-      h1 *{
-        font-size: 30px;
+      .container h1{
+        font-size: 40px;
+        font-family: sans-serif;
+        margin-top: 5%;
+        padding-top: 5%;
       }
 
+      .container img{
+        height: 200px;
+        width: auto;
+      }
 
+      .container h3 {
+        font-size: 25px;
+      }
+
+      .container p {
+        font-size: 20px;
+      }
 }
-
-
-
-
 
 /* device grosso */
 @media screen and (min-width: 993px){
       .container>div {
         margin-top: 20px;
+        margin-bottom: 20px;
         padding: 0 3%;
       }
 
-      h1 * {
+      .container h1 {
+        font-size: 40px;
+        font-family: sans-serif;
+        margin-top: 5%;
+        padding-top: 5%;
+      }
+
+      .container img{
+        height: 200px;
+        width: auto;
+      }
+
+      .container h3 {
+        font-size: 30px;
+      }
+
+      .container p {
         font-size: 20px;
       }
 
-
 }
-
-
-
-
-
-
-
-
-.style-xs .container h1 {
-  font-size: 10px;
-  font-family: sans-serif;
-  margin-top: 5%;
-  padding-top: 5%;
-}
-
-.style-md .container h1 {
-  font-size: 20px;
-  font-family: sans-serif;
-  margin-top: 5%;
-  padding-top: 5%;
-}
-
-.style-lg .container h1 {
-  font-size: 40px;
-  font-family: sans-serif;
-  margin-top: 5%;
-  padding-top: 5%;
-}
-
-
-
-
 
 /* STILE IMMAGINI ---------- */
-
-.style-xs .container img{
-  height: 200px;
-  width: auto;
-}
-
-.style-md .container img{
-  height: 200px;
-  width: auto;
-}
-
-.style-lg .container img{
-  height: 200px;
-  width: auto;
-}
