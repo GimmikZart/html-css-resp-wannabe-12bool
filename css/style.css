@@ -1,6 +1,171 @@
 /* FOGLIO DI STILE */
+
+/* REGOLE GENERALI */
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  text-align: center;
+}
+
+.container {
+  max-width: 992px;
+  margin: 0 auto;
+}
+
+.container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+
+/* BLOCCO LEZIONI ----------------------------------------------*/
+
+
+
+
+
+
+/* BLOCCO COMEFUNZIONA---------------------------------------- */
+
+#comefunziona {
+  background-color: rgb(222, 222, 217);
+}
+
+
+
+
+
+
+
+
+
+
+/* BLOCCO PERCHE ----------------------------------------------*/
+
+
+#perchecademi img {
+  background-color: #428bca;
+  border-radius: 50%;
+  padding: 30px;
+}
+
+#perchecademi {
+  background-color: rgb(222, 222, 217);
+}
+
+
+
+
+/* MEDIA QUERY GENERICHE -------------------------------------- */
+
+/* STILE CONTENITORI---------- */
+
+
+
+
+
+
+/* MEDIA QUERY STYLE ---------------------*/
+
+/* device piccolo */
+@media screen and (max-width: 768px) {
+     .container>div {
+        margin-top: 20px;
+        padding: 10px 0;
+      }
+
+      h1 * {
+        font-size: 50px;
+      }
+
+
+}
+
+
+
+/* device medio */
+@media screen and (min-width: 769px) and (max-width:992px){
+      .container>div {
+        margin-top: 20px;
+        padding: 0 5%;
+      }
+
+      h1 *{
+        font-size: 30px;
+      }
+
+
+}
+
+
+
+
+
+/* device grosso */
+@media screen and (min-width: 993px){
+      .container>div {
+        margin-top: 20px;
+        padding: 0 3%;
+      }
+
+      h1 * {
+        font-size: 20px;
+      }
+
+
+}
+
+
+
+
+
+
+
+
+.style-xs .container h1 {
+  font-size: 10px;
+  font-family: sans-serif;
+  margin-top: 5%;
+  padding-top: 5%;
+}
+
+.style-md .container h1 {
+  font-size: 20px;
+  font-family: sans-serif;
+  margin-top: 5%;
+  padding-top: 5%;
+}
+
+.style-lg .container h1 {
+  font-size: 40px;
+  font-family: sans-serif;
+  margin-top: 5%;
+  padding-top: 5%;
+}
+
+
+
+
+
+/* STILE IMMAGINI ---------- */
+
+.style-xs .container img{
+  height: 200px;
+  width: auto;
+}
+
+.style-md .container img{
+  height: 200px;
+  width: auto;
+}
+
+.style-lg .container img{
+  height: 200px;
+  width: auto;
 }

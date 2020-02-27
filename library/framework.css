@@ -6,6 +6,9 @@
 }
 
 
+
+/* DEVICE PICCOLI--------------------------------------------------------------- */
+
 /* SUDDIVISIONE IN COLONNE ------------*/
 
 @media screen and (max-width: 768px) {
@@ -109,9 +112,12 @@
         .col-xs-offset-12 {
           margin-left: calc((100%/12)*12);
         }
+
 }
 
 
+
+/* DEVICE MEDI ------------------------------------------------------------------ */
 
 @media screen and (min-width: 769px) and (max-width:992px) {
 
@@ -209,15 +215,16 @@
           margin-left: calc((100%/12)*11);
         }
 
-
-        /* riga vuota */
         .col-md-offset-12 {
           margin-left: calc((100%/12)*12);
         }
+
 }
 
 
 
+
+/* DEVICE GROSSI ------------------------------------------------------------ */
 
 @media screen and (min-width: 993px) {
 
@@ -320,6 +327,10 @@
         .col-lg-offset-12 {
           margin-left: calc((100%/12)*12);
         }
+
+
+
+
 
 
 
